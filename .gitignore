@@ -53,3 +53,61 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# --- Visual Studio Temporary Files ---
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+*.opencdb
+*.obj
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.exp
+*.log
+# Visual Studio 2022+ Solution Explorer state
+.vs/
+
+# --- MSIX & Windows Packaging ---
+*.msix
+*.appx
+*.msixbundle
+*.appxbundle
+AppPackages/
+BundleArtifacts/
+_pkg/
+*.cer
+*.pfx
+*.assets.cache
+*.wwaproj.user
+
+# Note: Keep your .pfx (signing certificate) out of GitHub for security!
+
+# --- Build System Outputs ---
+bin/
+obj/
+Generated\ Files/
+
+# --- User-specific files (The "Conflicts" Culprits) ---
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+# --- Tool-specific ---
+.directory
+.DS_Store
+Thumbs.db
+
+# --- External Libraries (if using vcpkg or similar) ---
+vcpkg_installed/
