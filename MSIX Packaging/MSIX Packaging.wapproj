@@ -56,8 +56,8 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <NoWarn>$(NoWarn);NU1702</NoWarn>
-    <PackageCertificateThumbprint>114CB463DA6CDE9755813F8A86D3758CCDC83C16</PackageCertificateThumbprint>
-    <PackageCertificateKeyFile>MSIX Packaging_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>432A2F1874BDA8E3F8AFB446D795023759CF29B9</PackageCertificateThumbprint>
+    <EntryPointProjectUniqueName>..\FTR-RK Software\FTR-RK Software.vcxproj</EntryPointProjectUniqueName>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -77,5 +77,8 @@
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
   <ItemGroup>
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FTR-RK Software\FTR-RK Software.vcxproj" />
   </ItemGroup>
 </Project>

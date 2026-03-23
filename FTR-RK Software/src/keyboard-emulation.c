@@ -1,0 +1,1 @@
+// This file is responsiable for application (launching if not already, selection, Keyboard emulation, reselecting prev focus window)

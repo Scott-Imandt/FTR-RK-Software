@@ -1,0 +1,1 @@
+// This File will be used for functions realted to USB Communcation / BT Communication as well as initialization of these components

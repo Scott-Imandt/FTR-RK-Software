@@ -6,7 +6,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="FTR-RK Software/FTR-RK Software.vcxproj">
+  <Project Path="FTR-RK Software/FTR-RK Software.vcxproj" Id="3e29aba0-f42c-4df9-b8b2-0f1f4d9eb425">
     <Platform Solution="*|ARM" Project="x64" />
     <Platform Solution="*|ARM64" Project="x64" />
   </Project>

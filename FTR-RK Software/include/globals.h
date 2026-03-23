@@ -1,0 +1,1 @@
+// this is the header file for all global structs, state tracking enum(idle,comm-active,writing-xml-status-error), extern declarations staettracking struct (bluetooth state, usb state, error count, total commands, uptime))

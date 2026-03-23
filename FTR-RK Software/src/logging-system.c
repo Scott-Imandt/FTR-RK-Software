@@ -1,0 +1,1 @@
+//This file is responsible for debug stats for statistics. This is log information such as (number of actions, errors (communication/runtime), application launch number, etc)
