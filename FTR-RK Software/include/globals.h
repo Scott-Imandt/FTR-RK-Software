@@ -5,7 +5,7 @@
 /* Thread1: Serial listener
 *		repsonsiblilty is to continously poll the com port for data comming from the esp32
 * 
-*		logic it stays 'blocked' untl the it recieves a command and places that command into a thread safe que	
+*		logic it stays 'blocked' until it recieves a command and places that command into a thread safe que	
 * 
 */
 
@@ -27,6 +27,7 @@
 #include <stdio.h>
 #include <windows.h>
 #include <psapi.h>
+#include <stdbool.h>
 
 //AppState is a high level tracking of what the program is doing a the current time
 typedef enum AppState {
