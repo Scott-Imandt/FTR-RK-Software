@@ -46,13 +46,6 @@ typedef struct AppConfig {
 	int commandCount;				//The total number of mappings loaded from the INI (6 max rn)
 };
 
-// Used by the log file to catagorize file entries
-typedef enum LogLevel {
-	LOG_INFO,
-	LOG_WARN,
-	LOG_ERROR
-};
-
 //represent the mapping of  a single keyto trigger a windows action
 typedef struct KeyCommand {
 	char triggerID[6]; // Serial data string send from the esp32
