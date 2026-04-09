@@ -19,7 +19,7 @@ int main() {
 
 	//-----CONFICURATION STEP-----
 
-	//Call Function from the XML PARSER / CREATOR
+	//Call Function from the INI PARSER / CREATOR
 
 	
 
