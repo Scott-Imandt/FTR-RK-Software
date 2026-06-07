@@ -12,7 +12,7 @@
 /* Thread 2 Main logic thread
 *		Responsibility: monitors the que and executes the windows API commands for window selection and keyboard execution
 		
-		logic: when the command appears in the que this thread calls the windowcontroller to find FTR reportera nd input emulation to send keys
+		logic: when the command appears in the que this thread calls the windowcontroller to find FTR reporter and input emulation to send keys
 */
 
 /* Thread 3 Logging Thread
@@ -68,7 +68,7 @@ typedef struct SharedBuffer {
 typedef struct GlobalContext {
 	struct AppConfig config;	// the loaded INI Settings
 	struct SharedBuffer buffer; // the communication bridge
-	enum AppState currentState;	// The life cycele status
+	enum AppState currentState;	// The life cycle status
 	HANDLE hComPort;			// The system handle for the esp32 connection
 	FILE* logFile;				// The handle for the logging file
 
