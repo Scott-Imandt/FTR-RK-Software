@@ -73,6 +73,8 @@ x86/
 *.lib
 *.exp
 *.log
+*.htm
+
 # Visual Studio 2022+ Solution Explorer state
 .vs/
 
