@@ -29,6 +29,8 @@
 #include <psapi.h>
 #include <stdbool.h>
 
+#define MAX_MACRO_KEYS 8 // Define a max limit for key's to be pressed per action
+
 //AppState is a high level tracking of what the program is doing a the current time
 typedef enum AppState {
 	STATE_UNKNOWN = 0,		// Unknown state to cause panic
@@ -46,12 +48,13 @@ typedef struct AppConfig {
 	int commandCount;				//The total number of mappings loaded from the INI (6 max rn)
 };
 
-//represent the mapping of  a single keyto trigger a windows action
+//represent the mapping of  a single key to trigger a windows action
 typedef struct KeyCommand {
 	char triggerID[6]; // Serial data string send from the esp32
 	char focusApplication[32]; // the name of the application to send commands too
-	int virtualKeyCode;// the windows hex equvilent for executing the command
-	int modifierFlags; // For id shift, Ctrl, Alt should be held at any point
+	int virtualKeyCode[MAX_MACRO_KEYS];// the windows hex equvilent for executing the command as an array for multiple key presses per action
+	int modifierFlags[MAX_MACRO_KEYS]; // For id shift, Ctrl, Alt should be held at any point. A matching array for key presses to match the virtual keycode array
+	int keyCount; // Total keys that will be pressed for a given action
 };
 
 //This is the thread safe que the serial thread writes here and the main thread reads here
