@@ -51,7 +51,7 @@ int main() {
 
 
     //Free Heap allocated items
-    free_config(&ctx);
+    free(ctx.config.commands);
     
     //Destroy Win32 Sync mechanisms last
     DeleteCriticalSection(&ctx.buffer.lock);
